@@ -1,0 +1,16 @@
+{% extends 'blog/site_base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Cadastro{% endblock %}
+
+{% block content %}
+    <h2>Cadastro</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-danger mt-4" type="submit">Cadastrar</button>
+    </form>
+
+{% endblock %}

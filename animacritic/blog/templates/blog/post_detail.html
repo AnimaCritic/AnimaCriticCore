@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+{% block title %} {{ post.title }} {% endblock %}
+
+{% block content %}
+
+    <h1> {{ post.title }} </h1>
+    <p class="date">
+        Publicado em {{ post.created }} por {{ post.author }}
+    </p>
+    {{ post.content|linebreaks }}
+    
+{% endblock %}
+

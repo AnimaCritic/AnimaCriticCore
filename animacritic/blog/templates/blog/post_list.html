@@ -1,0 +1,45 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+{% block title %} Post list {% endblock %}
+
+{% block content %}
+    
+    {% for post in post_list %}
+
+    {% if forloop.counter0 == 0 %} 
+
+    <div class="col-lg-16">
+        <div class="card mb-4">
+            <a href="{{post.get_absolute_url}}#bottom"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+            <div class="card-body">
+                <div class="small text-muted">{{ post.created }}</div>
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-text">{{ post.content|linebreaks|truncatewords:40 }}</p>
+                <a class="btn btn-danger" href="{{post.get_absolute_url}}#bottom">Ler mais →</a>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+
+    <!-- Blog post-->
+    <div class="col-lg-6">
+        <div class="card mb-4">
+            <a href="{{post.get_absolute_url}}#bottom"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+            <div class="card-body">
+                <div class="small text-muted">{{ post.created }}</div>
+                <h2 class="card-title h4">{{ post.title }}</h2>
+                <p class="card-text">{{ post.content|linebreaks|truncatewords:10 }}</p>
+                <a class="btn btn-danger" href="{{post.get_absolute_url}}#bottom">Ler mais →</a>
+            </div>
+        </div>
+    </div>
+        
+
+    {% endfor %}
+
+{% endblock %}
+
+

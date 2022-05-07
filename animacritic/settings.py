@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from threading import local
 
+import django_heroku 
 import os
 from telnetlib import AUTHENTICATION
 
@@ -151,3 +153,5 @@ LOGIN_REDIRECT_URL = "/"
 ACCOUNT_SESSION_REMEMBER = True
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+django_heroku.settings(locals())

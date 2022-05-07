@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\My Drive\Estudos\Cesar_School\Graduacao_2021.2\2_periodo\FDS\trabalho_fds\animacritic_blog\venv
+set VIRTUAL_ENV=F:\Users\djdog\Desktop\AnimaCriticCore\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

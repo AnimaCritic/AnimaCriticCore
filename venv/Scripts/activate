@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\My Drive\Estudos\Cesar_School\Graduacao_2021.2\2_periodo\FDS\trabalho_fds\animacritic_blog\venv"
+VIRTUAL_ENV="F:\Users\djdog\Desktop\AnimaCriticCore\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

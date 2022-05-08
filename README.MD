@@ -1,8 +1,7 @@
 # :clapper: AnimaCritic
 
-![GitHub repo size](https://img.shields.io/github/repo-size/DjdogeGamer/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/DjdogeGamer/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/DjdogeGamer/README-template?style=for-the-badge)
+![Integration](https://github.com/<Animacritic>/<AnimaCriticCore>/actions/workflows/<django.yml>/badge.svg)
+![Deploy](https://github.com/<Animacritic>/<AnimaCriticCore>/actions/workflows/<deploy.yml>/badge.svg)
 
 ### 🚀 Projeto da Disciplina de Fundamentos de Desenvolvimento de Software 2022.1 da [CESAR School](https://www.cesar.school) 🧡
 

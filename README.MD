@@ -1,8 +1,5 @@
 # :clapper: AnimaCritic
 
-![Integration](https://github.com/<Animacritic>/<AnimaCriticCore>/actions/workflows/<django.yml>/badge.svg)
-![Deploy](https://github.com/<Animacritic>/<AnimaCriticCore>/actions/workflows/<deploy.yml>/badge.svg)
-
 ### 🚀 Projeto da Disciplina de Fundamentos de Desenvolvimento de Software 2022.1 da [CESAR School](https://www.cesar.school) 🧡
 
 ### :left_speech_bubble: Sobre:

@@ -1,5 +1,8 @@
 # :clapper: AnimaCritic
 
+![Build](https://img.shields.io/github/workflow/status/AnimaCritic/AnimaCriticCore/django.yml)
+![Deploy]()
+
 ### 🚀 Projeto da Disciplina de Fundamentos de Desenvolvimento de Software 2022.1 da [CESAR School](https://www.cesar.school) 🧡
 
 ### :left_speech_bubble: Sobre:

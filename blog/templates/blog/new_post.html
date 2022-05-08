@@ -1,0 +1,17 @@
+{% extends 'blog/site_base.html' %}
+
+{% block title %} Criar Post {% endblock %}
+
+{% block content %}
+
+    <h1>Novo Post</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-danger">Post</button>
+    </form>
+
+
+
+{% endblock %}

@@ -16,7 +16,7 @@
             <div class="card-body">
                 <div class="small text-muted">{{ post.created }}</div>
                 <h2 class="card-title">{{ post.title }}</h2>
-                <p class="card-text">{{ post.content|linebreaks|truncatewords:40 }}</p>
+                <p class="card-text">{{ post.content|linebreaks|truncatewords:10 }}</p>
                 <a class="btn btn-danger" href="{{post.get_absolute_url}}#bottom">Ler mais →</a>
             </div>
         </div>

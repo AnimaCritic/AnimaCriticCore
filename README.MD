@@ -1,6 +1,6 @@
 # :clapper: AnimaCritic
 
-![Build](https://img.shields.io/github/workflow/status/AnimaCritic/AnimaCriticCore/Django%20CI)
+![Build](https://img.shields.io/github/workflow/status/AnimaCritic/AnimaCriticCore/Django%20CI)  
 ![Deploy](https://img.shields.io/github/workflow/status/AnimaCritic/AnimaCriticCore/Deploy?label=Deploy)
 
 ### 🚀 Projeto da Disciplina de Fundamentos de Desenvolvimento de Software 2022.1 da [CESAR School](https://www.cesar.school) 🧡

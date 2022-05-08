@@ -16,5 +16,3 @@ jobs:
           heroku_app_name: "animacritic" 
           heroku_email: "gustavohco34@gmail.com"
           healthcheck: "https://animacritic.herokuapp.com/health"
-          checkstring: "ok"
-          delay: 5

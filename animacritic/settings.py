@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-if '/app' in os.environ['HOME']:
+if '/animacritic' in os.environ['HOME']:
     import django_heroku
     django_heroku.settings(locals())
 

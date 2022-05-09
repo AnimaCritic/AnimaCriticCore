@@ -55,6 +55,8 @@ class FormTesting(LiveServerTestCase):
         
         assert "AnimaCritic - Uma Comunidade CESAR School" in driver.title
         
+        driver.close()
+        
     """
     def testLogout(self):
         options = webdriver.ChromeOptions()

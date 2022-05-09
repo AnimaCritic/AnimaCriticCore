@@ -11,6 +11,7 @@ class Teste(unittest.TestCase):
     def test(self):
         assert True
         
+"""
 class FormTesting(LiveServerTestCase):
     def testFormLogin(self):
         options = webdriver.ChromeOptions()
@@ -56,6 +57,7 @@ class FormTesting(LiveServerTestCase):
         assert "AnimaCritic - Uma Comunidade CESAR School" in driver.title
         
         driver.close()
+    """
         
     """
     def testLogout(self):

@@ -8,7 +8,7 @@
     <p>Você tem certeza que deseja sair?</p>
     <form method="post" action="{% url 'account_logout' %}">
         {% csrf_token %}
-        <button class="btn btn-danger mt-4" type="submit">Sair</button>
+        <button class="btn btn-danger mt-4" id="logout_btn" type="submit">Sair</button>
     </form>
     
 {% endblock %}

@@ -46,35 +46,82 @@
 
         <!-- Carrossel Responsivo -->
 
-        <!--
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src= "{% static 'assets/lwa.jpg' %}"class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <div class="bg-dark bg-opacity-75">
+            <h5>Anime: "Little Witch Academia"</h5>
+            <p>Arte: "Studio Trigger"</p>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
           <img src= "{% static 'assets/bna.png' %}"" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <div class="bg-dark bg-opacity-75">
+            <h5>Anime: "Brand New Animal" </h5> 
+            <p>Arte: "Studio Trigger" </p>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
           <img src= "{% static 'assets/eoe.png' %}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <div class="bg-dark bg-opacity-75">
+            <h5>Anime: "The End of Evangelion"</h5>
+            <p>Arte: "blissfuLee"</p>
+            </div>
           </div>
         </div>
+        <div class="carousel-item">
+            <img src= "{% static 'assets/eoe3.jpg' %}"" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="bg-dark bg-opacity-75">
+              <h5>Anime: "Neon Genesis Evangelion"</h5>
+              <p>Arte: "Studio GAINAX"</p>
+              </div>
+            </div>
+          </div>
+        <div class="carousel-item">
+            <img src= "{% static 'assets/lwa_sucy.jpg' %}"" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="bg-dark bg-opacity-75">
+              <h5>Anime: "Little Witch Academia"</h5>
+              <p>Arte: "Studio Trigger"</p>
+              </div>
+            </div>
+          </div>
+        <div class="carousel-item">
+            <img src= "{% static 'assets/eva.jpg' %}"" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="bg-dark bg-opacity-75">
+                <h5>Anime: "Neon Genesis Evangelion"</h5>
+                <p>Arte: "Studio GAINAX"</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src= "{% static 'assets/csm.jpg' %}"" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="bg-dark bg-opacity-75">
+                <h5>Anime: "Chainsaw Man"</h5>
+                <p>Arte: "Studio MAPPA"</p>
+                </div>
+            </div>
+        </div>
+        
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,48 +131,57 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-    -->
-
-        <!-- Banner Responsivo -->
-
-        <style>
-            .masthead {
-                  height: 100vh; 
-                  min-height: 500px;
-                  background-image: url({% static 'assets/lwa.jpg' %});
-                  background-size: cover;
-                  background-position: center;
-                  background-repeat: no-repeat;
-        }
-        </style>
-
-        <header class="masthead border-bottom mb-4">
-          <div class="container h-100">
-            <div class="row h-100 align-items-center">
-              <div class="col-12 text-center bg-dark bg-opacity-75 border border-2 border-danger rounded-3">
-                <h1 class="fw-bolder text-white">Bem-vindo(a) ao AnimaCritic!</h1>
-                <i class="lead text-white">Uma Comunidade CESAR School</i>
-                <!--<p class="text-white">Anime: "The End of Evangelion" | Arte: "blissfuLee"</p>-->
-                <!--<p class="text-white">Anime: "Brand New Animal" | Arte: "Studio Trigger"</p>-->
-                <p class="text-white">Anime: "Little Witch Academia" | Arte: "Studio Trigger"</p>
-              </div>
-            </div>
-          </div>
-        </header>
-        
-    
-        <!-- Page header with logo and tagline-->
-        <!--
-        <header class="py-5 border-bottom mb-4">
-            <div class="container">
-                <div class="text-center my-5">
-                    <h1 class="fw-bolder">Bem-vindo(a) ao AnimaCritic!</h1>
-                    <i class="lead mb-0">Uma Comunidade CESAR School</i>
+        <div class="main-text hidden-xs">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                  <div class="col-12 text-center bg-dark bg-opacity-75 border border-2 border-danger rounded-3">
+                    <h1 class="fw-bolder text-white">Bem-vindo(a) ao AnimaCritic!</h1>
+                    <i class="lead text-white">Uma Comunidade CESAR School</i>
+                  </div>
                 </div>
+              </div>
+        </div>
+    </div>
+
+    <style>
+        .main-text {
+            position: absolute;
+            top: 450px;
+            width: 100%;
+            color: #FFF;
+        }
+    </style>    
+    
+    
+    <!-- Banner Responsivo -->
+
+    <!--
+    <style>
+        .masthead {
+                height: 100vh; 
+                min-height: 500px;
+                background-image: url({% static 'assets/lwa.jpg' %});
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+    }
+    </style>
+
+    <header class="masthead border-bottom mb-4">
+        <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center bg-dark bg-opacity-75 border border-2 border-danger rounded-3">
+            <h1 class="fw-bolder text-white">Bem-vindo(a) ao AnimaCritic!</h1>
+            <i class="lead text-white">Uma Comunidade CESAR School</i>
+            <!--<p class="text-white">Anime: "The End of Evangelion" | Arte: "blissfuLee"</p>-->
+            <!--<p class="text-white">Anime: "Brand New Animal" | Arte: "Studio Trigger"</p>-->
+            <p class="text-white">Anime: "Little Witch Academia" | Arte: "Studio Trigger"</p>
             </div>
-        </header>
-        -->
+        </div>
+        </div>
+    </header>
+    -->
+        
 
         <!-- Page content-->
         <div class="container" id="posts">

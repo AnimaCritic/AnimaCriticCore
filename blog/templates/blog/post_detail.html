@@ -10,7 +10,7 @@
     <p class="date">
         Publicado em {{ post.created }} por {{ post.author }}
     </p>
-    {{ post.content|safe }}
+    {{ post.content|safe|linebreaks }}
     
 {% endblock %}
 

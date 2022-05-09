@@ -31,6 +31,8 @@ class FormTesting(LiveServerTestCase):
         
         assert "AnimaCritic - Uma Comunidade CESAR School" in driver.title
         
+        driver.close()
+        
         
     def testFormSignUp(self):
         options = webdriver.ChromeOptions()
@@ -54,6 +56,8 @@ class FormTesting(LiveServerTestCase):
         submit.click
         
         assert "AnimaCritic - Uma Comunidade CESAR School" in driver.title
+        
+        driver.close()
         
 
     """

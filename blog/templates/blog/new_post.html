@@ -1,17 +1,15 @@
-{% extends 'blog/site_base.html' %}
+{% extends 'blog/add_post_base.html' %}
 
 {% block title %} Criar Post {% endblock %}
 
+{% load crispy_forms_tags %}
+
+<h1>Novo Post</h1>
+
 {% block content %}
-
-    <h1>Novo Post</h1>
-
     <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form|crispy }}
         <button class="btn btn-danger" id="post_btn">Post</button>
     </form>
-
-
-
 {% endblock %}

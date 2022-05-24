@@ -5,6 +5,8 @@
 
 ### 🚀 Projeto da Disciplina de Fundamentos de Desenvolvimento de Software 2022.1 da [CESAR School](https://www.cesar.school) 🧡
 
+![image](https://user-images.githubusercontent.com/69666481/169938080-4c5fba62-6966-4b63-b676-7919cba5093f.png)
+
 ### :left_speech_bubble: Sobre:
 
 AnimaCritic é um Blog de resenhas que reúne toda a comunidade entusiasta de animações japonesas dentro da **Cesar School** ou fora também!

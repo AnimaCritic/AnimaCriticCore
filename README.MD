@@ -46,6 +46,8 @@ Usuários podem escrever posts falando sobre novos episódios, opiniões, lança
 Requisitos:
 * Interpretador do Python 3.0 ou mais recente instalado em sua máquina
 
+Passo a Passo:
+
 * Clone o projeto usando: <code> git clone https://github.com/AnimaCritic/AnimaCriticCore </code>
 
 * Inicie um novo ambiente virtual usando: <code> python -v venv venv </code>

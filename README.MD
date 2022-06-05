@@ -44,7 +44,8 @@ Usuários podem escrever posts falando sobre novos episódios, opiniões, lança
 ### 🔧 Instruções para Contribuir
 
 Requisitos:
-* Interpretador do Python 3.0 ou mais recente instalado em sua máquina
+
+* Interpretador do Python 3.9 ou mais recente instalado em sua máquina
 
 Passo a Passo:
 
@@ -52,10 +53,14 @@ Passo a Passo:
 
 * Inicie um novo ambiente virtual usando: <code> python -v venv venv </code>
 
+* Ative o ambiente virtual usando: <code> Venv\Scripts\Activate </code>
+
 * Instale as dependências usando: <code> pip install -r requirements.txt </code>
 
 * Rode o servidor do Django utilizando: <code> python manage.py runserver </code>
 
 * Para rodar os testes use: <code> python manage.py test </code>
+
+Confira a documentação completa do Django em: https://docs.djangoproject.com/en/4.0/
 
 <p align="center">Copyright © 2022 CESAR School</p>

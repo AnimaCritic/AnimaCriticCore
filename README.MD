@@ -56,6 +56,6 @@ Passo a Passo:
 
 * Rode o servidor do Django utilizando: <code> python manage.py runserver </code>
 
-* Para rodar os testes use: <code> manage.py test </code>
+* Para rodar os testes use: <code> python manage.py test </code>
 
 <p align="center">Copyright © 2022 CESAR School</p>

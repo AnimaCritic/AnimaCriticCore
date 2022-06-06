@@ -112,12 +112,6 @@ class FormTesting(LiveServerTestCase):
         slug.send_keys('Slug') 
         content.send_keys('Conteudo')
         
-        el = driver.find_element_by_id('id_author')
-        for option in el.find_elements_by_tag_name('option'):
-            if option.text == 'gustavo':
-                option.click()
-                break
-        
         submit.click()
 
         assert "AnimaCritic - Uma Comunidade CESAR School" in driver.title

@@ -14,13 +14,11 @@ from pathlib import Path
 import django_heroku
 import os
 
-<<<<<<< HEAD
-if '/animacritic' in os.path.expanduser('~'):
-=======
+
 if '/animacritic' in os.environ['HOME']:
->>>>>>> 2be01c53991ae8f66ea453de4f84ea5d7690ab46
     import django_heroku
     django_heroku.settings(locals())
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% extends "blog/site_base.html" %}
+
+    {% load static %}
+    
+    {% block title %} {{ post.title }} {% endblock %}
+    
+    {% block content %}
+    
+    <div class="text-center">
+        <h2 class="mt-5 mb-5">FAQ</h2>
+      </div>
+      <section class="container my-5" id="maincontent">
+        <section id="accordion">
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Quem Somos ?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-17">
+            <div class="card card-body border-0 p-0">
+              <p>O AnimaCritic nada mais é do que um site de críticas de anime.
+                A ferramenta serve aos momentos onde se sente a necessidade de
+                compartilhar suas opiniões sobre um anime, seja a vontade de elogiar
+                ou a necessidade de expressar a indignação quando suas expectativas não
+                são supridas; ou talvez sua vontade seja ver o que outras pessoas falam
+                de uma obra para decidir se vale a pena ver ou não; ou até organizar watchlists de anime.
+                Seja como for a forma que o AnimaCritic vai te servir, é uma plataforma clara e sucinta:
+                um fórum para a comunidade otaku, focado nas opiniões da audiência sobre diferentes obras.
+                Como adicional, os usuários podem interagir entre si e com as postagens e ter animes recomendados
+                para si com base na sua atividade.</p>
+    
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Como posso criar um post ?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-18">
+            <div class="card card-body border-0 p-0">
+              <p>Lorem ipsum dolor sit!</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Como criar uma conta ?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-19">
+            <div class="card card-body border-0 p-0">
+              <p>Lorem ipsum dolor sit!</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                What is the best email to reach you at?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-20">
+            <div class="card card-body border-0 p-0">
+              <p>Lorem ipsum dolor sit!</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Where can I read more about this company?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-21">
+            <div class="card card-body border-0 p-0">
+              <p>Lorem ipsum dolor sit!</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                What is the best time to call?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-22">
+            <div class="card card-body border-0 p-0">
+              <p>Lorem ipsum dolor sit!</p>
+              <p>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+        
+    {% endblock %}
+
+</body>
+

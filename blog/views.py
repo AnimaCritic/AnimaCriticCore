@@ -17,5 +17,8 @@ class AddPostView(CreateView):
     template_name = "blog/new_post.html"
     fields = ('title', 'summary', 'slug' , 'author' , 'content')
     
-def home(request):
-    return render(request, 'base.html')
+def faq(request):
+    return render(request, 'blog/faq.html')
+
+def about_us(request):
+    return render(request, 'blog/about_us.html')

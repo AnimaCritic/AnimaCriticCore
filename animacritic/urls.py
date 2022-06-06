@@ -16,11 +16,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path, re_path
+from blog.views import about_us, faq
 
 urlpatterns = [
     path('', include("blog.urls", namespace="blog")),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls'))
+    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    path('faq/', faq, name="faq"),
+    path('about_us/', about_us, name="about_us"),
      
 ]

@@ -11,7 +11,7 @@
 
 ### :left_speech_bubble: Sobre:
 
-AnimaCritic é um Blog de resenhas que reúne toda a comunidade entusiasta de animações japonesas dentro da **Cesar School** ou fora também!
+AnimaCritic é um Blog de resenhas que reúne toda a comunidade entusiasta de animações japonesas dentro da **Cesar School** ou fora também
 
 Inspirado na comunidade do AnimaClub na CESAR School 🧡
 

@@ -162,5 +162,3 @@ LOGIN_REDIRECT_URL = "/"
 ACCOUNT_SESSION_REMEMBER = False
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-
-django_heroku.settings(locals())

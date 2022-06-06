@@ -11,12 +11,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
 import os
 
 
-if '/animacritic' in os.environ['HOME']:
-    import django_heroku
-    django_heroku.settings(locals())
+#if '/animacritic' in os.environ['HOME']:
+#import django_heroku
+#django_heroku.settings(locals())
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -164,3 +165,4 @@ ACCOUNT_SESSION_REMEMBER = False
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
+django_heroku.settings(locals())

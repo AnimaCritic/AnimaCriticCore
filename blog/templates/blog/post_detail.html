@@ -11,6 +11,8 @@
         Publicado em {{ post.created }} por {{ post.author }}
     </p>
     {{ post.content|safe|linebreaks }}
-    
+    <div>
+    <a class="btn btn-danger mb-4" href="{% url 'update_post' post.pk %}"> Editar </a> 
+    </div>
 {% endblock %}
 

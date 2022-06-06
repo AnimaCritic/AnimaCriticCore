@@ -18,6 +18,8 @@
                 <h2 class="card-title">{{ post.title }}</h2>
                 <p class="card-text">{{ post.content|safe|linebreaks|truncatewords:30 }}</p>
                 <a class="btn btn-danger" href="{{post.get_absolute_url}}#posts">Ler mais →</a>
+                <a class="btn btn-danger" href="{% url 'update_post' post.pk %}"> Editar </a> 
+                <a class="btn btn-danger" href="{% url 'delete_post' post.pk %}"> Deletar </a> 
             </div>
         </div>
     </div>
@@ -33,6 +35,8 @@
                 <h2 class="card-title h4">{{ post.title }}</h2>
                 <p class="card-text">{{ post.content|safe|linebreaks|truncatewords:30 }}</p>
                 <a class="btn btn-danger" href="{{post.get_absolute_url}}#posts">Ler mais →</a>
+                <a class="btn btn-danger" href="{% url 'update_post' post.pk %}"> Editar </a> 
+                <a class="btn btn-danger" href="{% url 'delete_post' post.pk %}"> Deletar </a> 
             </div>
         </div>
     </div> 

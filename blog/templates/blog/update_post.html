@@ -1,0 +1,18 @@
+{% extends "blog/site_base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %} Editar Post {% endblock %}
+
+{% block content %}
+
+    <h1> Editar: {{ post.title }} </h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button href="" class="btn btn-danger" id="post_btn"> Atualizar </button>
+    </form>
+
+
+{% endblock %}

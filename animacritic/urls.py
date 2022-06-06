@@ -16,11 +16,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path, re_path
+from blog.views import UpdatePostView, DeletePostView, home
 
 urlpatterns = [
     path('', include("blog.urls", namespace="blog")),
-    path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls'))
-     
+    path('admin/', admin.site.urls),
+    path('', home, name='home'),
+    path('edit/<int:pk>', UpdatePostView.as_view(), name="update_post"),
+    path('delete/<int:pk>', DeletePostView.as_view(), name="delete_post"),
+    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

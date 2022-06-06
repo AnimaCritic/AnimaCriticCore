@@ -1,5 +1,7 @@
 {% extends "blog/base.html" %}
 
+{% load crispy_forms_tags %}
+
 {% load static %}
 
 {% block title %} {{ post.title }} {% endblock %}
@@ -10,9 +12,60 @@
     <p class="date">
         Publicado em {{ post.created }} por {{ post.author }}
     </p>
+    <h3>Avaliação do autor (0 - 10) : {{ post.review }}/10 </h3>
     {{ post.content|safe|linebreaks }}
-    <div>
-    <a class="btn btn-danger mb-4" href="{% url 'update_post' post.pk %}"> Editar </a> 
-    </div>
+    {% if user.is_authenticated %}
+        {% if user.id == post.author.id %}
+            <div>
+            <a class="btn btn-danger mb-4" href="{% url 'update_post' post.pk %}"> Editar </a> 
+
+            <a class="btn btn-danger mb-4" href="{% url 'delete_post' post.pk %}"> Deletar </a> 
+            </div>
+            {% endif %}
+            <div>
+            <form action"{% url 'like_post' post.pk %}" method="POST">
+                {% csrf_token %}
+                <button type="submit", name="post.id", value="{{ post.id }}", class="btn btn-primary mt-4 mb-4"> Like (Broken) </button>
+            </div>
+    {% endif %}
+
+    <hr>
+
+    <h2 class="subtitle">Comments</h2>
+
+    {% for comment in post.comments.all %}
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <strong>{{ comment.name }}</strong> <small>{{ comment.date_added }}</small>
+                        <br>
+                        {{ comment.body }}
+                    </p>
+                </div>
+            </div>
+        </article>
+    {% empty %}
+        <div class="notification">
+            <p>Sem comentários ainda!</p>
+        </div>
+    {% endfor %}
+
+    <hr>
+
+    <h2 class="subtitle">Adicionar Comentários</h2>
+
+    <form method="Post" action=".">
+        {% csrf_token %}
+
+        {{ form|crispy }}
+
+        <div class="field">
+            <div class="control">
+                <button class="btn btn-danger mt-4 mb-4">Escrever</button>
+            </div>
+        </div>
+    </form>
+
 {% endblock %}
 

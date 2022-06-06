@@ -2,10 +2,17 @@
 
 {% load static %}
 
-{% block title %} {% endblock %}
+{% block title %} Seu Perfil {% endblock %}
 
 {% block content %}
 
-    <h1> Perfil </h1>
+    <h1> Seu Perfil </h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {{ form.media }}
+        <button href="" class="btn btn-danger mt-4 mb-4" id="post_btn"> Atualizar Perfil </button>
+    </form>
     
 {% endblock %}

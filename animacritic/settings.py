@@ -11,9 +11,14 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
 import os
 
+<<<<<<< HEAD
 if '/animacritic' in os.path.expanduser('~'):
+=======
+if '/animacritic' in os.environ['HOME']:
+>>>>>>> 2be01c53991ae8f66ea453de4f84ea5d7690ab46
     import django_heroku
     django_heroku.settings(locals())
 
@@ -161,4 +166,3 @@ LOGIN_REDIRECT_URL = "/"
 ACCOUNT_SESSION_REMEMBER = False
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-

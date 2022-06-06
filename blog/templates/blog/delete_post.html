@@ -1,0 +1,17 @@
+{% extends "blog/site_base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %} Deletar Post {% endblock %}
+
+{% block content %}
+
+    <h1> Deletar "{{ post.title }}" ?</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <button href="" class="btn btn-danger" id="post_btn"> Deletar </button>
+    </form>
+
+
+{% endblock %}

@@ -2,10 +2,10 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.contrib.auth.forms import UserChangeForm
 from django.views.generic import DetailView, ListView, CreateView, UpdateView, DeleteView
-from django.views import generic
+#from django.views import generic
 from .models import Post
 from django.http import HttpResponseRedirect
-from django import forms
+#from django import forms
 from .forms import CommentForm
 from django.shortcuts import render, redirect
 

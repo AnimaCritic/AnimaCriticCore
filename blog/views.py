@@ -20,12 +20,12 @@ class PostDetailView(DetailView):
 class AddPostView(CreateView):
     model = Post
     template_name = "blog/new_post.html"
-    fields = ('title', 'slug', 'summary', 'preview', 'review', 'content')
+    fields = ('title', 'slug', 'summary', 'author', 'preview', 'review', 'content')
 
 class UpdatePostView(UpdateView):
     model = Post
     template_name = "blog/update_post.html"
-    fields = ('title', 'summary', 'preview', 'review','slug', 'content')
+    fields = ('title', 'summary', 'preview', 'author', 'review','slug', 'content')
     
 class DeletePostView(DeleteView):
     model = Post
